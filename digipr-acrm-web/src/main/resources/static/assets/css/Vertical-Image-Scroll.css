@@ -1,0 +1,18 @@
+.shadow-down {
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(50, 50, 50, 0.57);
+  -moz-box-shadow: 0px -1px 4px 0px rgba(50, 50, 50, 0.57);
+  box-shadow: 0px -1px 4px 0px rgba(50, 50, 50, 0.57);
+}
+
+.horitzontalScroll {
+  min-width: 100%;
+  min-height: 100px;
+  display: flex;
+  overflow-x: auto;
+}
+
+.custlnk {
+  color: black;
+  text-decoration: none;
+}
+

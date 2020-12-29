@@ -1,21 +1,25 @@
-<!--
-  ~ Copyright (c) 2020. University of Applied Sciences and Arts Northwestern Switzerland FHNW.
-  ~ All rights reserved.
-  -->
-
 <!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>A-CRM</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.5.2/flatly/bootstrap.min.css" integrity="sha384-qF/QmIAj5ZaYFAeQcrQ6bfVMAh4zZlrGwTPY7T/M+iTTLJqJBJjwwnsE5Y0mV7QK" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&amp;display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>A-CRM (4)</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="../assets/css/Article-Clean.css">
+    <link rel="stylesheet" href="../assets/css/Bold-BS4-CSS-Image-Slider.css">
+    <link rel="stylesheet" href="../assets/css/Footer-Dark.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/Login-Form-Dark.css">
+    <link rel="stylesheet" href="../assets/css/Navigation-with-Button.css">
+    <link rel="stylesheet" href="../assets/css/Navigation-with-Search.css">
     <link rel="stylesheet" href="../assets/css/navigation.css">
+    <link rel="stylesheet" href="../assets/css/Registration-Form-with-Photo.css">
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/Vertical-Image-Scroll.css">
 </head>
 
 <body>
@@ -23,7 +27,7 @@
         <div class="page-header">
             <h2 class="text-center"><strong>A-CRM | Create</strong> your account. </h2>
         </div>
-        <form action="agentLogin.html" method="post" id="form">
+        <form id="form" action="agentLogin.html" method="post">
             <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Name"></div>
             <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"></div>
             <div class="form-group"><input class="form-control" type="password" name="password" placeholder="Password"></div>
@@ -34,31 +38,19 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header" style="background-color: #e85e6c;">
-                    <h1 class="text-white">Ooops!</h1><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                    <h1 class="text-white">Ooops!</h1><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
                 <div class="modal-body">
                     <p class="text-truncate text-primary" id="error-text"></p>
                 </div>
-                <div class="modal-footer"><button class="btn btn-warning btn-block" type="button" data-dismiss="modal">Try Again</button></div>
+                <div class="modal-footer"><button class="btn btn-warning btn-block" data-dismiss="modal" type="button">Try Again</button></div>
             </div>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="../assets/js/app.js"></script>
     <script src="../assets/js/script.js"></script>
-    <script language="JavaScript">
-        $(document).ready(function () {
-            $("#form").submit(function (event) {
-                register($('input[name=name]').val(), $('input[name=email]').val(), $('input[name=password]').val(), function (result) {
-                    window.location.replace("../");
-                }, function (error) {
-                    $("#error-modal").modal('show');
-                    $("#error-text").text(error);
-                });
-                event.preventDefault();
-            });
-        });
-    </script>
 </body>
 
 </html>
