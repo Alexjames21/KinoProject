@@ -22,12 +22,12 @@ public class UserController {
 
     @GetMapping("/static")
     public String getLoginView() {
-        return "#";
+        return "Login.html";
     }
 
     @GetMapping("/static")
     public String getRegisterView() {
-        return "#";
+        return "Register.html";
     }
 
     @PostMapping("/static")
@@ -42,7 +42,7 @@ public class UserController {
 
     @GetMapping("/static")
     public String getProfileView() {
-        return "#";
+        return "ChangePassword.html";
     }
 
     @GetMapping("/static")
