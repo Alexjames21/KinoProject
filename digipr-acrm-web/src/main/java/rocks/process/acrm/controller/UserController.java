@@ -20,7 +20,7 @@ public class UserController {
     @Autowired
     private AgentService agentService;
 
-    @PostMapping("/user/register")
+    @PostMapping("/Register")
     public ResponseEntity<Void> postRegister(@RequestBody Agent agent) {
         try {
             agentService.saveAgent(agent);
