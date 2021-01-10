@@ -1,0 +1,48 @@
+.cd-words-wrapper {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-size: 60px;
+  color: #fff;
+}
+
+.cd-words-wrapper b {
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  left: 0;
+  top: 0;
+  color: #fff;
+}
+
+.cd-words-wrapper b.is-visible {
+  position: relative;
+}
+
+.cd-headline b.is-visible {
+  opacity: 1;
+  font-weight: 900;
+  color: #fff;
+}
+
+.pre-text {
+  color: #fff;
+}
+
+row {
+  background: rgb(219, 226, 226);
+}
+
+row {
+  background: rgb(219, 226, 226);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+row {
+}
+
