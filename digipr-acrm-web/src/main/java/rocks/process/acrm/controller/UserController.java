@@ -20,17 +20,17 @@ public class UserController {
     @Autowired
     private AgentService agentService;
 
-    @GetMapping("/static")
+    @GetMapping("/login")
     public String getLoginView() {
-        return "Login.html";
+        return "agentLogin.html";
     }
 
-    @GetMapping("/static")
+    @GetMapping("/user/register")
     public String getRegisterView() {
-        return "Register.html";
+        return "agentRegister.html";
     }
 
-    @PostMapping("/static")
+    @PostMapping("/user/register")
     public ResponseEntity<Void> postRegister(@RequestBody Agent agent) {
         try {
             agentService.saveAgent(agent);
@@ -40,17 +40,17 @@ public class UserController {
         return ResponseEntity.ok().build();
     }
 
-    @GetMapping("/static")
+    @GetMapping("/profile/edit")
     public String getProfileView() {
-        return "ChangePassword.html";
+        return "agentEdit.html";
     }
 
-    @GetMapping("/static")
+    @GetMapping("/profile")
     public @ResponseBody Agent getProfile() {
         return agentService.getCurrentAgent();
     }
 
-    @PutMapping("/static")
+    @PutMapping("/profile")
     public ResponseEntity<Void> putProfile(@RequestBody Agent agent) {
         try {
             agent.setId(agentService.getCurrentAgent().getId());
