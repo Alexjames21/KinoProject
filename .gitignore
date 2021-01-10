@@ -11,7 +11,7 @@
 .sts4-cache
 
 ### IntelliJ IDEA ###
-.idea
+digipr-acrm-web/.idea
 *.iws
 *.iml
 *.ipr
