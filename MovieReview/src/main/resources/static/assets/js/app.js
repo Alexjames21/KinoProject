@@ -12,7 +12,7 @@ function login(email-address, password, remember, callback) {
         headers: {
             "X-XSRF-TOKEN": getCookie("XSRF-TOKEN")
         },
-        url: serviceEndpointURL + "/login",
+        url: serviceEndpointURL + "/Login",
         data: JSON.stringify({
             "email-address": email-address,
             "password": password,
@@ -48,7 +48,7 @@ function register(username, email-address, password, callbackSuccess, callbackEr
         headers: {
             "X-XSRF-TOKEN": getCookie("XSRF-TOKEN")
         },
-        url: serviceEndpointURL + "/user/register",
+        url: serviceEndpointURL + "/Register",
         data: JSON.stringify({
             "username": username,
             "email-address": email-address,
