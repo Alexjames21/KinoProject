@@ -1,3 +1,0 @@
-security:
-  token:
-    secret: mysecret-which-needs-to-be-of-at-least-512bit-long!please-change
