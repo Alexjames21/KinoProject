@@ -14,23 +14,15 @@ public class Customer {
 
 	@Id
 	@GeneratedValue
-	private Long id;
-	private String name;
-	@Email(message = "Please provide a valid e-mail.")
-	@NotEmpty(message = "Please provide an e-mail.")
-	private String email;
-	private String mobile;
+	private String username;
+	private String inpEmail;
+	private String password;
 	@ManyToOne
 	@JsonIgnore
 	private Agent agent;
 
-	public Long getId() {
-		return id;
-	}
 
-	public void setId(Long id) {
-		this.id = id;
-	}
+
 
 	public String getName() {
 		return name;

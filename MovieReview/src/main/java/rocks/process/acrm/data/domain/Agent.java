@@ -74,11 +74,5 @@ public class Agent {
 		this.customers = customers;
 	}
 
-	public String getRemember() {
-		return remember;
-	}
 
-	public void setRemember(String remember) {
-		this.remember = remember;
-	}
 }
