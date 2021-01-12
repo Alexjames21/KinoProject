@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="A-CRM" uuid="1b22d8ba-c417-4f8e-9ed1-d4893a9b37cf">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\Jan\IdeaProjects\KinoProject\modelling\A-CRM.vpp</jdbc-url>
+    </data-source>
+  </component>
+</project>
