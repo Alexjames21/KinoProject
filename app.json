@@ -13,7 +13,7 @@
     },
     "MAVEN_CUSTOM_OPTS": {
       "description": "Define the default deployment of the multi module project.",
-      "value": "-pl MovieReview"
+      "value": "-pl KinoProject/MovieReview"
     }
   },
   "addons": [ "heroku-postgresql" ]
