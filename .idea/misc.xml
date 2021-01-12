@@ -7,14 +7,6 @@
         <option value="$PROJECT_DIR$/MovieReview/pom.xml" />
       </list>
     </option>
-    <option name="ignoredFiles">
-      <set>
-        <option value="$PROJECT_DIR$/digipr-acrm-api/pom.xml" />
-        <option value="$PROJECT_DIR$/digipr-acrm-core/pom.xml" />
-        <option value="$PROJECT_DIR$/digipr-acrm-data/pom.xml" />
-        <option value="$PROJECT_DIR$/digipr-acrm-security/pom.xml" />
-      </set>
-    </option>
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="openjdk-15" project-jdk-type="JavaSDK" />
 </project>
