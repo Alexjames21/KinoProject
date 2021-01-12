@@ -1,7 +1,3 @@
-/*
- * Copyright (c) 2020. University of Applied Sciences and Arts Northwestern Switzerland FHNW.
- * All rights reserved.
- */
 
 package rocks.process.acrm.controller;
 
@@ -11,31 +7,29 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping(path = "/Top Movies")
-public class CustomerController {
+    public class TopMoviesController {
 
     @GetMapping
-    public String getCustomerView(){
-        return "Top Movies.html";
-    }
+    public String getTopMovieView() { return "Top Movies.html"; }
 
     @GetMapping("/createGodfather")
-    public String getCustomerCreateView(){
+    public String getGodfatherReviewView() {
         return "ReviewFormGodfather.html";
     }
 
     @GetMapping("/createIt")
-    public String getCustomerCreateView(){
+    public String getItReviewView() {
         return "ReviewFormIt.html";
     }
-    
+
     @GetMapping("/createStarWars")
-    public String getCustomerCreateView(){
+    public String getStarWarsReviewView() {
         return "ReviewFormStarWars.html";
     }
-    
+
     @GetMapping("/createTenet")
-    public String getCustomerCreateView(){
+    public String getTenetReviewView() {
         return "ReviewFormTenet.html";
     }
-    
+
 }
