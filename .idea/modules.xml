@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MovieReview.iml" filepath="$PROJECT_DIR$/MovieReview.iml" />
       <module fileurl="file://$PROJECT_DIR$/MovieReview-web/MovieReview-web.iml" filepath="$PROJECT_DIR$/MovieReview-web/MovieReview-web.iml" />
-      <module fileurl="file://$PROJECT_DIR$/digipr-acrm.iml" filepath="$PROJECT_DIR$/digipr-acrm.iml" />
     </modules>
   </component>
 </project>
