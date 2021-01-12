@@ -40,7 +40,7 @@
         <h2 class="text-center">Review to&nbsp;<strong>Godfather</strong></h2>
         <h3 class="text-center">Write your Review down below</h3>
     </div>
-    <form action="newreview.html" method="post" id="form">
+    <form action="newgodfatherreview.html" method="post" id="form">
         <div class="form-group">
             <div class="input-group">
                 <div class="input-group-prepend"><span class="input-group-text">Name </span></div><input class="form-control" type="text" name="name"></div>
@@ -93,7 +93,7 @@
 <script language="JavaScript">
     $(document).ready(function () {
         $("#form").submit(function (event) {
-            postCustomer(getCustomerJSON(null, $('input[name=name]').val(), $('input[name=email]').val(), $('input[name=mobile]').val()), function (result) {
+            postReviewGodfather(getReviewGodfatherJSON(null, $('input[name=name]').val(), $('input[name=text]').val()), function (result) {
                 window.location.replace("/top_movies/godfather");
             }, function (error) {
                 $("#error-modal").modal('show');

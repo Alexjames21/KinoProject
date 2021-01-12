@@ -110,3 +110,74 @@ function getCookie(name) {
     var match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
     if (match) return match[2];
 }
+
+function getReviewGodfatherJSON(name, review) {
+    if (id === null) {
+        return JSON.stringify({
+            "name": name,
+            "review": text,
+        });
+    }
+    return JSON.stringify({
+        "name": name,
+        "email": review,
+    });
+}
+
+function getReviewItJSON(name, review) {
+    if (id === null) {
+        return JSON.stringify({
+            "name": name,
+            "email": review,
+        });
+    }
+    return JSON.stringify({
+        "name": name,
+        "email": review,
+    });
+}
+
+function getReviewStarWarsJSON(name, review) {
+    if (id === null) {
+        return JSON.stringify({
+            "name": name,
+            "email": review,
+        });
+    }
+    return JSON.stringify({
+        "name": name,
+        "email": review,
+    });
+}
+
+function getReviewTenetJSON(name, review) {
+    if (id === null) {
+        return JSON.stringify({
+            "name": name,
+            "email": review,
+        });
+    }
+    return JSON.stringify({
+        "name": name,
+        "email": review,
+    });
+}
+
+function postReviewGodfather(customer, callbackSuccess, callbackError) {
+    $.ajax({
+        type: "POST",
+        contentType: "application/json",
+        headers: {
+            "X-XSRF-TOKEN": getCookie("XSRF-TOKEN")
+        },
+        url: serviceEndpointURL + "/api/customer",
+        data: customer,
+        success: function (data, textStatus, response) {
+            callbackSuccess(data);
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            console.log(jqXHR, textStatus, errorThrown);
+            callbackError(jqXHR.responseJSON.message);
+        }
+    });
+}
