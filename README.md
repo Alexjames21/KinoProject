@@ -1,34 +1,38 @@
-# DigiPR Spring Boot Examples
+# About KinoReview
 
-[![License](http://img.shields.io/:license-apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
-[![Deploy to Heroku](https://img.shields.io/badge/deploy%20to-Heroku-6762a6.svg?longCache=true)](https://heroku.com/deploy)
+## Who we are
 
-## Examples
+We are a group of four eager students who want to develop a web application that is responsive and well-designed. 
+We are currently at the end of our third semester in our studies of Business Information Technology and this is our term project. 
 
-| Example | 
-| --- | 
-| **Core Spring Boot Bootstrapping**<br><br>[digipr-acrm-core](digipr-acrm-core) example illustrates how Spring Boot can be used to develop a microservice.<br><br>✔ Application Bootstrapping<br>✔ Microservice Application<br>✔ Spring Boot Testing | 
-| **Spring Boot Data Example**<br><br>[digipr-acrm-data](digipr-acrm-data) example illustrates how JPA can be used with the help of Spring Boot Data JPA including H2.<br><br>✔ Data Access / Persistence Layer<br>✔ Domain Objects / Entities<br>✔ Repositories |
-| **Spring Boot API Example**<br><br>[digipr-acrm-api](digipr-acrm-api) example illustrates how business logic and an API can be implemented with the help of Spring (Boot) MVC, and finally documented with Swagger/OpenAPI.<br><br>✔ Business Layer<br>✔ Service Layer / API<br>✔ Swagger API and API<br>✔ Microservice Documentation |
-| **Spring Security and JWT Example**<br><br>[digipr-acrm-security](digipr-acrm-security) example illustrates how Spring Security can be used to implement a JWT-based authentication.<br><br>✔ Spring Security<br>✔ JSON Web Token (JWT) |
-| **Spring MVC and jQuery Example**<br><br>[digipr-acrm-web](digipr-acrm-web)  example illustrates how Spring MVC can be used in combination with jQuery to implement a web application.<br><br>✔ Spring MVC<br>✔ jQuery (JWT)<br>✔ Bootstrap|
 
-#### Sub-Module Heroku Deployment
+## What are we trying to accomplish? 
 
-Since this repository consists of several sub-modules and a Maven parent, the Heroku GitHub deployment would be slightly different:
-1. Fork this repository
-2. Connect your Heroku-Account to your GitHub-Account
-3. Create a new app and choose under *Deploy* the forked repository
-4. You may change the following two **Config Vars** under *Settings* if you wil like to change the to be deployed module:
-   1. `MAVEN_CUSTOM_OPTS` = `-pl xyz-submodule-path`
-   2. `PATH_TO_PROJECT` = `xyz-submodule-path`
-5. Re-deploy the app
+During the lectures in our Internet Technology class, we formed the idea of creating a web-app for Movie reviews and discussions about them. 
+For us, the most challenging part would be to create a responsive site that offers a lot of variation concerning the interaction of movie enthusiasts. 
+This project is basically an overhaul of the reference project made by Mr. Martin, one of our lecturers. So the basics of a web-application like a login form or a customer database are already there. Our goal is to enhance the look of the website with the help of bootstrap and integrate some other functionalities that are needed for a movie review site. 
 
-#### Maintainer
-- [Andreas Martin](https://andreasmartin.ch)
+## Roadmap
 
-#### License
+Phase 1: Learn the basics
+In the first phase, our goal is to understand the basics of internet technology. This includes studying the theory taught by Mr. Montecchiari and Mr. Martin and also scrutinizing the reference project and understanding how input and output look like when implementing different solutions. We also needed to learn the different applications and functions that are crucial for web development such as bootstrap, Heroku, javascript, and so on. 
 
-- [Apache License, Version 2.0](blob/master/LICENSE)
+Phase 2: The second phase consists of constant and small development steps that form the websites look more on how we expect them to look. The biggest difference in a website's look and feel can be created with bootstrap, which is a really nice tool for the overall look, design, and responsiveness of a web app. 
 
-This is a test
+Phase 3: The third step is the polishing of our created infrastructure. We want to execute bugfixes and also enhance the overall look and feel of our web app. Here, the four-eyes principle is crucial. Many errors or humanly mistakes are not easy to perceive for the person committing them, so we have to check each other's work and realize what problems could occur and prevent them.
+
+Phase 4: The last phase of our project is the go-live. This is the most exciting part of our project and the part when we finally make our web app publicly available, so everybody can rate and discuss his or her favorite movies. We don't expect the go-live to be perfectly seamless but we hope that we fixed the most problems in phase 3 already so that we do not have to apply too many post-release patches afterwards. The goal for our go-live is to have an accessible and working web app where every functionality we wanted to implement is working properly 
+
+## Page Structure
+![Website Structure](https://github.com/Alexjames21/KinoProject/blob/master/MovieReview/src/main/resources/static/assets/img/gloomap_45fbd819.png)
+
+
+## Team Overview: 
+
+Navneethsai Kozhipurath – navneehtsai.kozhipurath@students.fhnw.ch - **Project Lead**
+
+Alexander Herzog  – alexander.herzog@students.fhnw.ch
+
+Jan Wilhelm – jan.wilhelm@student.fhnw.ch 
+
+Tijana Dobric - tijana.dobric@students.fhnw.ch
