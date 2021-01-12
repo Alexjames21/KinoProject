@@ -9,6 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class LoginController {
 
     @GetMapping
-    public String getLoginView(){return "Login.html";}
+    public String getLoginView(){return "login.html";}
 
 }

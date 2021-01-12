@@ -27,7 +27,7 @@ public class UserController {
 
     @GetMapping("/register")
     public String getRegisterView() {
-        return "Register.html";
+        return "register.html";
     }
 
     @PostMapping("/register")

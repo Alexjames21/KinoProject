@@ -6,30 +6,30 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping(path = "/Top Movies")
+@RequestMapping(path = "/top_movies")
     public class TopMoviesController {
 
     @GetMapping
-    public String getTopMovieView() { return "Top Movies.html"; }
+    public String getTopMovieView() { return "top_movies.html"; }
 
     @GetMapping("/createGodfather")
     public String getGodfatherReviewView() {
-        return "ReviewFormGodfather.html";
+        return "review_form_godfather.html";
     }
 
     @GetMapping("/createIt")
     public String getItReviewView() {
-        return "ReviewFormIt.html";
+        return "review_form_it.html";
     }
 
     @GetMapping("/createStarWars")
     public String getStarWarsReviewView() {
-        return "ReviewFormStarWars.html";
+        return "review_form_starwars.html";
     }
 
     @GetMapping("/createTenet")
     public String getTenetReviewView() {
-        return "ReviewFormTenet.html";
+        return "review_form_tenet.html";
     }
 
 }
