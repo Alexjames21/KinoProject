@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DigiprAcrmWebApplicationTests {
+class MovieReviewApplicationTests {
 
     @Test
     void contextLoads() {
