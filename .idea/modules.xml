@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/KinoProject.iml" filepath="$PROJECT_DIR$/KinoProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MovieReview/MovieReview.iml" filepath="$PROJECT_DIR$/MovieReview/MovieReview.iml" />
       <module fileurl="file://$PROJECT_DIR$/MovieReview/MovieReview.iml" filepath="$PROJECT_DIR$/MovieReview/MovieReview.iml" />
       <module fileurl="file://$PROJECT_DIR$/digipr-acrm.iml" filepath="$PROJECT_DIR$/digipr-acrm.iml" />
     </modules>
