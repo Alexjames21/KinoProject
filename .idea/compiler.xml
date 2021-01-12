@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="MovieReview" />
+        <module name="MovieReview-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -15,13 +15,13 @@
       <module name="digipr-acrm-core" target="1.8" />
       <module name="digipr-acrm-data" target="1.8" />
       <module name="digipr-acrm-security" target="1.8" />
-      <module name="KinoProject" target="1.5" />
-      <module name="MovieReview" target="1.8" />
+      <module name="MovieReview" target="1.5" />
+      <module name="MovieReview-web" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="MovieReview" options="-parameters" />
+      <module name="MovieReview-web" options="-parameters" />
       <module name="digipr-acrm-api" options="-parameters" />
       <module name="digipr-acrm-core" options="-parameters" />
       <module name="digipr-acrm-data" options="-parameters" />

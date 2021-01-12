@@ -10,12 +10,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>rocks.process.acrm</groupId>
-    <artifactId>KinoProject</artifactId>
+    <artifactId>MovieReview</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
-        <module>MovieReview</module>
+        <module>MovieReview-web</module>
 
     </modules>
 
