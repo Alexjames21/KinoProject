@@ -83,7 +83,8 @@ public class UserController {
     }
 
     @GetMapping("/Movies/Star Wars IX")
-    public String getProfileView() {
+    public String
+    getProfileView() {
         return "ReviewFormStarWars.html";
     }
 
