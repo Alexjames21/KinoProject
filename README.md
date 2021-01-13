@@ -29,7 +29,7 @@ Phase 4: The last phase of our project is the go-live. This is the most exciting
 
 ## Team Overview: 
 
-Navneethsai Kozhipurath – navneehtsai.kozhipurath@students.fhnw.ch - **Project Lead**
+Navneethsai Kozhipurath – navneethsai.kozhipurath@students.fhnw.ch - **Project Lead**
 
 Alexander Herzog  – alexander.herzog@students.fhnw.ch
 
