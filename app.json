@@ -16,5 +16,5 @@
       "value": "-pl MovieReview-web"
     }
   },
-
+  "addons": [ "heroku-postgresql" ]
 }
