@@ -7,10 +7,10 @@ package rocks.process.moviereview.data.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
-import rocks.process.moviereview.data.domain.Agent;
+import rocks.process.moviereview.data.domain.User;
 
 @Repository
-public interface AgentRepository extends JpaRepository<Agent, Long> {
-	Agent findByEmail(String email);
-	Agent findByEmailAndIdNot(String email, Long agentId);
+public interface AgentRepository extends JpaRepository<User, Long> {
+	User findByEmail(String email);
+	User findByEmailAndIdNot(String email, Long agentId);
 }

@@ -11,14 +11,14 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
-import rocks.process.moviereview.business.service.AgentService;
-import rocks.process.moviereview.data.domain.Agent;
+import rocks.process.moviereview.business.service.LoginService;
+import rocks.process.moviereview.data.domain.User;
 
 @Controller
 public class UserController {
 
     @Autowired
-    private AgentService agentService;
+    private LoginService agentService;
 
     @GetMapping("/register")
     public String getRegisterView() {
@@ -26,7 +26,7 @@ public class UserController {
     }
 
     @PostMapping("/register")
-    public ResponseEntity<Void> postRegister(@RequestBody Agent agent) {
+    public ResponseEntity<Void> postRegister(@RequestBody User agent) {
         try {
             agentService.saveAgent(agent);
         } catch (Exception e) {

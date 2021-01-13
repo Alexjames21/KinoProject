@@ -14,7 +14,7 @@ import javax.validation.constraints.NotEmpty;
 import java.util.List;
 
 @Entity
-public class Agent {
+public class User {
 
 	@Id
 	@GeneratedValue
@@ -30,7 +30,7 @@ public class Agent {
 	private String remember;
 	@OneToMany(mappedBy = "agent")
 	@JsonIgnore
-	private List<Customer> customers;
+	private List<Review> customers;
 
 	public Long getId() {
 		return id;
@@ -66,11 +66,11 @@ public class Agent {
 		this.password = password;
 	}
 
-	public List<Customer> getCustomers() {
+	public List<Review> getCustomers() {
 		return customers;
 	}
 
-	public void setCustomers(List<Customer> customers) {
+	public void setCustomers(List<Review> customers) {
 		this.customers = customers;
 	}
 

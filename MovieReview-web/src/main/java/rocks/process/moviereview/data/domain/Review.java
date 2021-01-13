@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
 @Entity
-public class Customer {
+public class Review {
 
 	@Id
 	@GeneratedValue
@@ -17,7 +17,7 @@ public class Customer {
 	private String password;
 	@ManyToOne
 	@JsonIgnore
-	private Agent agent;
+	private User agent;
 
 
 
@@ -46,11 +46,11 @@ public class Customer {
 		this.mobile = mobile;
 	}
 
-	public Agent getAgent() {
+	public User getAgent() {
 		return agent;
 	}
 
-	public void setAgent(Agent agent) {
+	public void setAgent(User agent) {
 		this.agent = agent;
 	}
 
