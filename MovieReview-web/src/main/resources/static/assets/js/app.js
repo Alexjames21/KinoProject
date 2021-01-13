@@ -27,18 +27,6 @@ function login(email-address, password, callback) {
     });
 }
 
-function validateLogin(callback) {
-    $.ajax({
-        type: "HEAD",
-        url: serviceEndpointURL + "/validate",
-        success: function (data, textStatus, response) {
-            callback(true);
-        },
-        error: function (jqXHR, textStatus, errorThrown) {
-            callback(false);
-        }
-    });
-}
 
 function register(username, email-address, password, callbackSuccess, callbackError) {
     $.ajax({
@@ -164,6 +152,63 @@ function getReviewTenetJSON(name, review) {
 }
 
 function postReviewGodfather(customer, callbackSuccess, callbackError) {
+    $.ajax({
+        type: "POST",
+        contentType: "application/json",
+        headers: {
+            "X-XSRF-TOKEN": getCookie("XSRF-TOKEN")
+        },
+        url: serviceEndpointURL + "/api/customer",
+        data: customer,
+        success: function (data, textStatus, response) {
+            callbackSuccess(data);
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            console.log(jqXHR, textStatus, errorThrown);
+            callbackError(jqXHR.responseJSON.message);
+        }
+    });
+}
+
+function postReviewTenet(customer, callbackSuccess, callbackError) {
+    $.ajax({
+        type: "POST",
+        contentType: "application/json",
+        headers: {
+            "X-XSRF-TOKEN": getCookie("XSRF-TOKEN")
+        },
+        url: serviceEndpointURL + "/api/customer",
+        data: customer,
+        success: function (data, textStatus, response) {
+            callbackSuccess(data);
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            console.log(jqXHR, textStatus, errorThrown);
+            callbackError(jqXHR.responseJSON.message);
+        }
+    });
+}
+
+function postReviewIt(customer, callbackSuccess, callbackError) {
+    $.ajax({
+        type: "POST",
+        contentType: "application/json",
+        headers: {
+            "X-XSRF-TOKEN": getCookie("XSRF-TOKEN")
+        },
+        url: serviceEndpointURL + "/api/customer",
+        data: customer,
+        success: function (data, textStatus, response) {
+            callbackSuccess(data);
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+            console.log(jqXHR, textStatus, errorThrown);
+            callbackError(jqXHR.responseJSON.message);
+        }
+    });
+}
+
+function postReviewStarWars(customer, callbackSuccess, callbackError) {
     $.ajax({
         type: "POST",
         contentType: "application/json",

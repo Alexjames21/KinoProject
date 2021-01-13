@@ -84,17 +84,10 @@
 <script src="../assets/js/app.js"></script>
 <script src="../assets/js/script.js"></script>
 <script language="JavaScript">
-    validateLogin(function (result) {
-        if (!result) {
-            window.location.replace("../login");
-        }
-    });
-</script>
-<script language="JavaScript">
     $(document).ready(function () {
         $("#form").submit(function (event) {
-            postCustomer(getCustomerJSON(null, $('input[name=name]').val(), $('input[name=email]').val(), $('input[name=mobile]').val()), function (result) {
-                window.location.replace("/customer");
+            postTemet(getReviewTenetJSON()JSON(null, $('input[name=name]').val(), $('input[name=text]').val()), function (result) {
+                window.location.replace("/top_movies/tenet");
             }, function (error) {
                 $("#error-modal").modal('show');
                 $("#error-text").text(error);
@@ -102,6 +95,7 @@
             event.preventDefault();
         });
     });
+</script>
 </script>
 <script src="../../assets/js/jquery.min.js"></script>
 <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>

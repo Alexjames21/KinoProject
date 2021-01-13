@@ -108,36 +108,18 @@
 <script src="assets/js/app.js"></script>
 <script src="assets/js/script.js"></script>
 <script language="JavaScript">
-    validateLogin(function (result) {
-        if (!result) {
-            window.location.replace("/login");
-        }
-    });
-</script>
-<script language="JavaScript">
     $(document).ready(function () {
-        $(loadData());
-
-        function loadData() {
-            getCustomers(function (result) {
-                $("#tableData").empty();
-                $.each(result, function (i, item) {
-                    $("#tableData").append($("<tr>").append($("<td>").text(item.id)).append($("<td>").text(item.name)).append($("<td>").text(item.email)).append($("<td>").text(item.mobile)).append($(
-                        "<td>\n" +
-                        "<div class=\"btn-group btn-group-sm\" role=\"group\"><a class=\"btn btn-light\" role=\"button\" href=\"/customer/edit?id=" + item.id + "\"> <i class=\"fa fa-edit\"></i></a><button class=\"btn btn-light\" type=\"button\" data-target=\"#confirm-modal\" data-toggle=\"modal\" data-id=\"" + item.id + "\"> <i class=\"fa fa-trash\"></i></button></div>\n" +
-                        "</td></tr>"
-                    )));
-                });
+        $("#form").submit(function (event) {
+            postReviewStarWars(getReviewStarWarsJSON(null, $('input[name=name]').val(), $('input[name=text]').val()), function (result) {
+                window.location.replace("/top_movies/starwars");
+            }, function (error) {
+                $("#error-modal").modal('show');
+                $("#error-text").text(error);
             });
-        }
-
-        $("#deleteData").click(function () {
-            deleteCustomer($(this).attr('data-id'), function (result) {
-                $('#confirm-modal').modal('hide');
-                loadData();
-            });
+            event.preventDefault();
         });
     });
+</script>
 </script>
 <script src="../../assets/js/jquery.min.js"></script>
 <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
