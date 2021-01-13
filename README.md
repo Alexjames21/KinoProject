@@ -36,7 +36,7 @@ Featured: The featured page is at the same time also the home page. It shows a f
 
 Write your own review here: This page is a sub-page of featured, it can be used to write an own review for the selected movie.
 
-Top Movies: Here, the top movies will be displayed and they can also be rated. 
+Top Movies: Here, the top movies will be displayed and they can also be rated if you are logged in. 
 
 About: On the about page, there is some information and pictures about us, the developers of the project. 
 
