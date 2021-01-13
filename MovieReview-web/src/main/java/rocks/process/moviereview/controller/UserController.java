@@ -36,38 +36,38 @@ public class UserController {
     }
 
     @GetMapping("/error")
-    public String getRegisterView() {
+    public String getErrorView() {
         return "403.html";
     }
 
     @GetMapping("/homesignedin")
-    public String getRegisterView() {
+    public String getHomeSignedInView() {
         return "home_signed_in.html";
     }
 
     @GetMapping("/home")
-    public String getRegisterView() {
+    public String getHomeView() {
         return "home.html";
     }
 
     @GetMapping("/aboutsignedin")
-    public String getRegisterView() {
+    public String getAboutSignedInView() {
         return "about_signed_in.html";
     }
 
     @GetMapping("/about")
-    public String getRegisterView() {
+    public String getAboutView() {
         return "about.html";
     }
 
     @GetMapping("/logout")
-    public String getRegisterView() {
+    public String getLogOutView() {
         return "home.html";
     }
 
 
     @GetMapping("/changepassword")
-    public String getRegisterView() {
+    public String getChangePasswordView() {
         return "change_password.html";
     }
 }
