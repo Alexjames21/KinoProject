@@ -12,6 +12,13 @@ During the lectures in our Internet Technology class, we formed the idea of crea
 For us, the most challenging part would be to create a responsive site that offers a lot of variation concerning the interaction of movie enthusiasts. 
 This project is basically an overhaul of the reference project made by Mr. Martin, one of our lecturers. So the basics of a web-application like a login form or a customer database are already there. Our goal is to enhance the look of the website with the help of bootstrap and integrate some other functionalities that are needed for a movie review site. 
 
+
+## Requirements analysis 
+
+Functional Requirements: Log-in form, Store customer data, Store rating data, create a customer account 
+
+Non-Functional Requirements: Corporate design with a movie theme, low maintenance times, Secured login and data storage, user friendly interface
+
 ## Design Decision 
 
 For our design, it was important to think about who our target audience is: Movie watchers. So these can be of any age group and therefore we wanted to make the design as fitting for all age groups as possible but at the same time it should look like a blockbuster: Shiny and well-polished. We then implemented the design in bootstrap that we wanted. The corporate design is based on movie backgrounds, which we thought was very fitting. The rest of the page should be in a rather unspectacular color so that the main focus is on the website content.
