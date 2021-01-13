@@ -24,7 +24,7 @@ Phase 3: The third step is the polishing of our created infrastructure. We want 
 Phase 4: The last phase of our project is the go-live. This is the most exciting part of our project and the part when we finally make our web app publicly available, so everybody can rate and discuss his or her favorite movies. We don't expect the go-live to be perfectly seamless but we hope that we fixed the most problems in phase 3 already so that we do not have to apply too many post-release patches afterwards. The goal for our go-live is to have an accessible and working web app where every functionality we wanted to implement is working properly 
 
 ## Page Structure
-![Website Structure](https://github.com/Alexjames21/KinoProject/blob/master/MovieReview/src/main/resources/static/assets/img/gloomap_45fbd819.png)
+![Website Structure](https://github.com/Alexjames21/KinoProject/blob/master/MovieReview-web/src/main/resources/static/assets/img/gloomap_6ef335ba.png)
 
 
 ## Team Overview: 
