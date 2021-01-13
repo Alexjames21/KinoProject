@@ -15,9 +15,24 @@ This project is basically an overhaul of the reference project made by Mr. Marti
 
 ## Requirements analysis 
 
-Functional Requirements: Log-in form, Store customer data, Store rating data, create a customer account 
+Functional Requirements: 
 
-Non-Functional Requirements: Corporate design with a movie theme, low maintenance times, Secured login and data storage, user friendly interface
+Log-in form 
+
+Store customer data 
+
+Store rating data 
+
+create a customer account 
+
+Non-Functional Requirements: 
+Corporate design with a movie theme 
+
+low maintenance times
+
+Secured login and data storage 
+
+user-friendly interface
 
 ## Design Decision 
 
