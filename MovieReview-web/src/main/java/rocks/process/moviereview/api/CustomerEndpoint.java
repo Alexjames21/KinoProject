@@ -24,22 +24,6 @@ public class CustomerEndpoint {
     @Autowired
     private CustomerService customerService;
 
-    @PostMapping(path = "/customer", consumes = "application/json", produces = "application/json")
-    public ResponseEntity<Customer> postCustomer(@RequestBody Customer customer) {
-        try {
-            customer = customerService.editCustomer(customer);
-        } catch (ConstraintViolationException e) {
-            throw new ResponseStatusException(HttpStatus.NOT_ACCEPTABLE, e.getConstraintViolations().iterator().next().getMessage());
-        } catch (Exception e) {
-            throw new ResponseStatusException(HttpStatus.CONFLICT, e.getMessage());
-        }
-
-        URI location = ServletUriComponentsBuilder
-                .fromCurrentRequest().path("/{customerId}")
-                .buildAndExpand(customer.getId()).toUri();
-
-        return ResponseEntity.created(location).body(customer);
-    }
 
     @GetMapping(path = "/customer", produces = "application/json")
     public List<Customer> getCustomers() {
