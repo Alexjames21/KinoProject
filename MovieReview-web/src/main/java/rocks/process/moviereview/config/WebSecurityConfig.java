@@ -3,7 +3,7 @@
  * All rights reserved.
  */
 
-package rocks.process.acrm.config;
+package rocks.process.moviereview.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -18,7 +18,7 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
-import rocks.process.acrm.business.service.UserDetailsServiceImpl;
+import rocks.process.moviereview.business.service.UserDetailsServiceImpl;
 import rocks.process.security.config.EnableTokenSecurity;
 import rocks.process.security.service.TokenService;
 import rocks.process.security.web.CSRFRequestMatcher;

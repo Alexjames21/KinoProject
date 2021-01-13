@@ -3,7 +3,7 @@
  * All rights reserved.
  */
 
-package rocks.process.acrm.controller;
+package rocks.process.moviereview.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -11,8 +11,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
-import rocks.process.acrm.business.service.AgentService;
-import rocks.process.acrm.data.domain.Agent;
+import rocks.process.moviereview.business.service.AgentService;
+import rocks.process.moviereview.data.domain.Agent;
 
 @Controller
 public class UserController {

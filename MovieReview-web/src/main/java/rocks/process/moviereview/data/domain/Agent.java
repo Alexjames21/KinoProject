@@ -3,7 +3,7 @@
  * All rights reserved.
  */
 
-package rocks.process.acrm.data.domain;
+package rocks.process.moviereview.data.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;

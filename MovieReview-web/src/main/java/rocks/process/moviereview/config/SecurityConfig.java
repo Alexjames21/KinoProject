@@ -3,7 +3,7 @@
  * All rights reserved.
  */
 
-package rocks.process.acrm.config;
+package rocks.process.moviereview.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

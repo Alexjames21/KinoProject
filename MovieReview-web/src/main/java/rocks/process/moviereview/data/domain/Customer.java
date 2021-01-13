@@ -1,4 +1,4 @@
-package rocks.process.acrm.data.domain;
+package rocks.process.moviereview.data.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -6,8 +6,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
-import javax.validation.constraints.Email;
-import javax.validation.constraints.NotEmpty;
 
 @Entity
 public class Customer {

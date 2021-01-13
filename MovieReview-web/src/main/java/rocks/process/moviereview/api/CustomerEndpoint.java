@@ -3,7 +3,7 @@
  * All rights reserved.
  */
 
-package rocks.process.acrm.api;
+package rocks.process.moviereview.api;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -11,8 +11,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
-import rocks.process.acrm.business.service.CustomerService;
-import rocks.process.acrm.data.domain.Customer;
+import rocks.process.moviereview.business.service.CustomerService;
+import rocks.process.moviereview.data.domain.Customer;
 
 import javax.validation.ConstraintViolationException;
 import java.net.URI;

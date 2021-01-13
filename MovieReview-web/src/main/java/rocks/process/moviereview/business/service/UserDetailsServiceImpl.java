@@ -3,7 +3,7 @@
  * All rights reserved.
  */
 
-package rocks.process.acrm.business.service;
+package rocks.process.moviereview.business.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
@@ -11,8 +11,8 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-import rocks.process.acrm.data.domain.Agent;
-import rocks.process.acrm.data.repository.AgentRepository;
+import rocks.process.moviereview.data.domain.Agent;
+import rocks.process.moviereview.data.repository.AgentRepository;
 
 import static java.util.Collections.emptyList;
 

@@ -3,7 +3,7 @@
  * All rights reserved.
  */
 
-package rocks.process.acrm;
+package rocks.process.moviereview;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
