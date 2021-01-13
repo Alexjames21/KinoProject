@@ -5,16 +5,16 @@
 
 serviceEndpointURL = window.location.protocol + "//" + window.location.host;
 
-function login(email-address, password, callback) {
+function login(email, password, callback) {
     $.ajax({
         type: "POST",
         contentType: "application/json",
         headers: {
             "X-XSRF-TOKEN": getCookie("XSRF-TOKEN")
         },
-        url: serviceEndpointURL + "/Login",
+        url: serviceEndpointURL + "/login",
         data: JSON.stringify({
-            "email-address": email-address,
+            "inpemail": email,
             "password": password,
         }),
         success: function (data, textStatus, response) {
@@ -35,7 +35,7 @@ function register(username, email-address, password, callbackSuccess, callbackEr
         headers: {
             "X-XSRF-TOKEN": getCookie("XSRF-TOKEN")
         },
-        url: serviceEndpointURL + "/Register",
+        url: serviceEndpointURL + "/register",
         data: JSON.stringify({
             "username": username,
             "email-address": email-address,
@@ -51,42 +51,9 @@ function register(username, email-address, password, callbackSuccess, callbackEr
     });
 }
 
-function getReview(callback) {
-    $.ajax({
-        type: "GET",
-        dataType: "json",
-        url: serviceEndpointURL + "/ReviewForm",
-        success: function (data, textStatus, response) {
-            callback(data);
-        },
-        error: function (jqXHR, textStatus, errorThrown) {
-            console.log(jqXHR, textStatus, errorThrown);
-        }
-    });
-}
 
-function putReview(title,text,rating) {
-    $.ajax({
-        type: "PUT",
-        contentType: "application/json",
-        headers: {
-            "X-XSRF-TOKEN": getCookie("XSRF-TOKEN")
-        },
-        url: serviceEndpointURL + "/ReviewForm",
-        data: JSON.stringify({
-            "title": title,
-            "text": text,
-            "rating": rating,
-        }),
-        success: function (data, textStatus, response) {
-            callbackSuccess(true);
-        },
-        error: function (jqXHR, textStatus, errorThrown) {
-            console.log(jqXHR, textStatus, errorThrown);
-            callbackError(jqXHR.responseJSON.message);
-        }
-    });
-}
+
+
 
 
 

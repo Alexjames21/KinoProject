@@ -11,7 +11,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
 import rocks.process.moviereview.data.domain.User;
-import rocks.process.moviereview.data.repository.AgentRepository;
+import rocks.process.moviereview.data.repository.UserRepository;
 
 import javax.validation.Valid;
 import javax.validation.Validator;
@@ -21,14 +21,14 @@ import javax.validation.Validator;
 public class LoginService {
 
     @Autowired
-    private AgentRepository agentRepository;
+    private UserRepository agentRepository;
     @Autowired
     Validator validator;
     @Autowired
     private PasswordEncoder passwordEncoder;
 
-    public void saveAgent(@Valid User agent) throws Exception {
-        if (agent.getId() == null) {
+    public void saveUser(@Valid User agent) throws Exception {
+        if (user.getId() == null) {
             if (agentRepository.findByEmail(agent.getEmail()) != null) {
                 throw new Exception("Email address " + agent.getEmail() + " already assigned another agent.");
             }

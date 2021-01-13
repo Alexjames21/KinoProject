@@ -109,12 +109,12 @@
 <script language="JavaScript">
         $(document).ready(function () {
             $("#form").submit(function (event) {
-                login($('input[name=email-address]').val(), $('input[name=password]').val(), function (result) {
+                login($('input[name=inpemail]').val(), $('input[name=password]').val(), function (result) {
                     if(result) {
-                        window.location.replace("../TopMovies.html");
+                        window.location.replace("../top_movies");
                     }
                     else {
-                    window.location.replace("../403.html");
+                    window.location.replace("../login/error");
                     }
                 });
                 event.preventDefault();

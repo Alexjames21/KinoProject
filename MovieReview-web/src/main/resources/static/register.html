@@ -53,17 +53,17 @@
             <form>
                 <div class="form-row">
                     <div class="col-lg-7">
-                        <input type="username" placeholder="Username" class="form-control my-3 p-4" id="registerUsername" pattern="[A-Za-z\d\.]{6,12}" title="Username must be between 6 and 12 characters and contain only letters, numbers and periods" required="">
+                        <input type="username" placeholder="Username" class="form-control my-3 p-4" id="name" name="email" pattern="[A-Za-z\d\.]{6,12}" title="Username must be between 6 and 12 characters and contain only letters, numbers and periods" required="">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="col-lg-7">
-                        <input type="email" id = "inpEmail" placeholder="Email-Address" class="form-control my-3 p-4" required="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                        <input type="email" id = "email" placeholder="Email-Address" class="form-control my-3 p-4" name="email" required="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                     </div>
                 </div>
                                  <div class="form-row">
                     <div class="col-lg-7">
-                        <input type="password" placeholder="Password" class="form-control my-3 p-4" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
+                        <input type="password" placeholder="Password" class="form-control my-3 p-4" name=email id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
                     </div>
                                      
                 </div>                
@@ -114,6 +114,18 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/JavaScript.js"></script>
     <script src="assets/js/jquery.min.js"></script>
+    <script language="JavaScript">
+        $(document).ready(function () {
+            $("#form").submit(function (event) {
+                register($('input[name=name]').val(), $('input[name=email]').val(), $('input[name=password]').val(), function (result) {
+                    window.location.replace("../top_movies");
+                }, function (error) {
+                    window.location.replace("../");
+                });
+                event.preventDefault();
+            });
+        });
+    </script>
 </body>
 
 </html>

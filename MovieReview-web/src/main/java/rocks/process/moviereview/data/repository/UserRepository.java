@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 import rocks.process.moviereview.data.domain.User;
 
 @Repository
-public interface AgentRepository extends JpaRepository<User, Long> {
+public interface UserRepository extends JpaRepository<User, Long> {
 	User findByEmail(String email);
 	User findByEmailAndIdNot(String email, Long agentId);
 }

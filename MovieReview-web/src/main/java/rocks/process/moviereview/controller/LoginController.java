@@ -11,4 +11,7 @@ public class LoginController {
     @GetMapping
     public String getLoginView(){return "login.html";}
 
+    @GetMapping("/error")
+    public String getLoginError(){return "password_invalid.html";}
+
 }

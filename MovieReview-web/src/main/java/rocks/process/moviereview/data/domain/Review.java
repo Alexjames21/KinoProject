@@ -17,7 +17,7 @@ public class Review {
 	private String password;
 	@ManyToOne
 	@JsonIgnore
-	private User agent;
+	private User user;
 
 
 

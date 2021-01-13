@@ -16,29 +16,14 @@ import java.util.List;
 @Entity
 public class User {
 
-	@Id
 	@GeneratedValue
-	private Long id;
-	@NotEmpty(message = "Please provide a name.")
 	private String name;
-	@Email(message = "Please provide a valid e-mail.")
-	@NotEmpty(message = "Please provide an e-mail.")
 	private String email;
 	@JsonProperty(access = JsonProperty.Access.WRITE_ONLY) // only create object property from JSON
 	private String password;
 	@Transient // will not be stored in DB
-	private String remember;
-	@OneToMany(mappedBy = "agent")
+	@OneToMany(mappedBy = "user")
 	@JsonIgnore
-	private List<Review> customers;
-
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
 
 	public String getName() {
 		return name;
@@ -64,14 +49,6 @@ public class User {
 
 	public void setPassword(String password) {
 		this.password = password;
-	}
-
-	public List<Review> getCustomers() {
-		return customers;
-	}
-
-	public void setCustomers(List<Review> customers) {
-		this.customers = customers;
 	}
 
 
