@@ -107,19 +107,13 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
 <script src="assets/js/app.js"></script>
 <script src="assets/js/script.js"></script>
-<script language="JavaScript">
-    validateLogin(function (result) {
-        if (!result) {
-            window.location.replace("/login");
-        }
-    });
-</script>
+
 <script language="JavaScript">
     $(document).ready(function () {
         $(loadData());
 
         function loadData() {
-            getCustomers(function (result) {
+            getReviewIt(function (result) {
                 $("#tableData").empty();
                 $.each(result, function (i, item) {
                     $("#tableData").append($("<tr>").append($("<td>").text(item.id)).append($("<td>").text(item.name)).append($("<td>").text(item.email)).append($("<td>").text(item.mobile)).append($(

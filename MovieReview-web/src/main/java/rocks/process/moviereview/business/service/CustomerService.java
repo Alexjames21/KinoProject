@@ -23,22 +23,6 @@ public class CustomerService {
 	@Autowired
 	private AgentService agentService;
 
-	public Customer editCustomer(@Valid Customer customer) throws Exception {
-		if (customer.getId() == null) {
-			if (customerRepository.findByMobile(customer.getMobile()) == null) {
-				customer.setAgent(agentService.getCurrentAgent());
-				return customerRepository.save(customer);
-			}
-			throw new Exception("Mobile number " + customer.getMobile() + " already assigned to a customer.");
-		}
-		if (customerRepository.findByMobileAndIdNot(customer.getMobile(), customer.getId()) == null) {
-			if (customer.getAgent() == null) {
-				customer.setAgent(agentService.getCurrentAgent());
-			}
-			return customerRepository.save(customer);
-		}
-		throw new Exception("Mobile number " + customer.getMobile() + " already assigned to a customer.");
-	}
 
 	public void deleteCustomer(Long customerId)
 	{

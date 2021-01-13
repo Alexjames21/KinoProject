@@ -86,8 +86,8 @@
 <script language="JavaScript">
     $(document).ready(function () {
         $("#form").submit(function (event) {
-            postReviewIt(getReviewItJSON(null, $('input[name=name]').val(), $('input[name=text]').val()), function (result) {
-                window.location.replace("/top_movies/StarWars");
+            postReviewStarWars(getReviewStarWarsJSON(null, $('input[name=name]').val(), $('input[name=text]').val()), function (result) {
+                window.location.replace("/top_movies/starwars");
             }, function (error) {
                 $("#error-modal").modal('show');
                 $("#error-text").text(error);
