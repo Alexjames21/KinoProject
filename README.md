@@ -15,7 +15,7 @@ This project is basically an overhaul of the reference project made by Mr. Marti
 
 ## Requirements analysis 
 
-Functional Requirements: 
+**Functional Requirements:** 
 
 Log-in form 
 
@@ -25,7 +25,8 @@ Store rating data
 
 create a customer account 
 
-Non-Functional Requirements: 
+**Non-Functional Requirements:**
+
 Corporate design with a movie theme 
 
 low maintenance times
