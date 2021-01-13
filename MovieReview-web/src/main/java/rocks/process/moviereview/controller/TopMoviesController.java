@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
     @GetMapping
-    public String getTopMovieView() { return "top_movies.html"; }
+    public String getTopMovieView() { return "/top_movies.html"; }
 
-    @GetMapping("/godfather")
+    @GetMapping("godfather")
     public String getGodfatherView() {
         return "godfather.html";
     }

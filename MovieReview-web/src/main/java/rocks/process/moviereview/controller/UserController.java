@@ -11,14 +11,11 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
-//import rocks.process.moviereview.business.service.LoginService;
-//import rocks.process.moviereview.data.domain.User;
+
 
 @Controller
 public class UserController {
 
-    //@Autowired
-    //private LoginService agentService;
 
     @GetMapping("/register")
     public String getRegisterView() {
@@ -26,7 +23,7 @@ public class UserController {
     }
 
 
-    @GetMapping("/error")
+    @GetMapping("/error403")
     public String getErrorView() {
         return "403.html";
     }
