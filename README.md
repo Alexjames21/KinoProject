@@ -19,11 +19,11 @@ This project is basically an overhaul of the reference project made by Mr. Marti
 
 Log-in form 
 
-Store customer data 
+Store log-in data 
 
-Store rating data 
+Store review data 
 
-create a customer account 
+create a user account 
 
 **Non-Functional Requirements:**
 
@@ -34,6 +34,8 @@ low maintenance times
 Secured login and data storage 
 
 user-friendly interface
+
+responsive layout
 
 ## Design Decision 
 
@@ -53,17 +55,17 @@ Phase 4: The last phase of our project is the go-live. This is the most exciting
 ## Page Structure
 ![Website Structure](https://github.com/Alexjames21/KinoProject/blob/master/MovieReview-web/src/main/resources/static/assets/img/gloomap_6ef335ba.png)
 
-The website consists of 5 pages: 
+The website consists of 4 main pages: 
 
 Featured: The featured page is at the same time also the home page. It shows a featured movie that is new or rated highly. 
 
-Write your own review here: This page is a sub-page of featured, it can be used to write an own review for the selected movie.
-
 Top Movies: Here, the top movies will be displayed and they can also be rated if you are logged in. 
 
-About: On the about page, there is some information and pictures about us, the developers of the project. 
+Write your own review here: This page is a sub-page of featured, it can be used to write an own review for the selected movie.
 
 Sign in: Here, the visitor can access his account or create a new account to write their own movie reviews.
+
+Top Movies also has sub-pages to the different movies. These sites consist of a short description of the movie and from here, you are able to post your own reviews with a review form. After filling out the form, the review is displayed on the site of the reviewed movie.
 
 
 ## Reflection 
