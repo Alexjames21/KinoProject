@@ -2,7 +2,7 @@
  * Copyright (c) 2020. University of Applied Sciences and Arts Northwestern Switzerland FHNW.
  * All rights reserved.
  */
-
+/*
 package rocks.process.moviereview.config;
 
 import org.springframework.context.annotation.Bean;
@@ -18,4 +18,4 @@ public class SecurityConfig {
         return new BCryptPasswordEncoder();
     }
 
-}
+}*/

@@ -2,7 +2,7 @@
  * Copyright (c) 2020. University of Applied Sciences and Arts Northwestern Switzerland FHNW.
  * All rights reserved.
  */
-
+/*
 package rocks.process.moviereview.business.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,4 +40,4 @@ public class CustomerService {
 		return customerRepository.findByAgentId(agentService.getCurrentAgent().getId());
 	}
 	
-}
+} */

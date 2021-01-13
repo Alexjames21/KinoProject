@@ -1,4 +1,4 @@
-
+/*
 package rocks.process.moviereview.config;
 
 import org.springframework.context.annotation.Bean;
@@ -18,4 +18,4 @@ public class SwaggerConfig {
                 .paths(PathSelectors.regex("(?!/error).+"))
                 .build();
     }
-}
+}*/

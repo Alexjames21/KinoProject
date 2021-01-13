@@ -8,16 +8,14 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
 @Entity
-public class Review {
+public class Review  {
 
-	@GeneratedValue
 	private String name;
 	private String text;
+	private String id;
+
 	@ManyToOne
 	@JsonIgnore
-
-
-
 
 	public String getName() {
 		return name;
@@ -31,10 +29,18 @@ public class Review {
 		return text;
 	}
 
-	public void setText (String email) {
+	public void setText(String email) {
 		this.text = text;
 	}
 
+	public void setId(String id) {
+		this.id = id;
+	}
 
-
+	@Id
+	public String getId() {
+		return id;
+	}
 }
+
+
