@@ -20,11 +20,6 @@ public class UserController {
     @Autowired
     private AgentService agentService;
 
-    @GetMapping("/login")
-    public String getLoginView() {
-        return "login.html";
-    }
-
     @GetMapping("/register")
     public String getRegisterView() {
         return "register.html";
@@ -40,9 +35,39 @@ public class UserController {
         return ResponseEntity.ok().build();
     }
 
+    @GetMapping("/error")
+    public String getRegisterView() {
+        return "403.html";
+    }
 
-    @RequestMapping(value = "/validate", method = {RequestMethod.GET, RequestMethod.HEAD})
-    public ResponseEntity<Void> init() {
-        return ResponseEntity.ok().build();
+    @GetMapping("/homesignedin")
+    public String getRegisterView() {
+        return "home_signed_in.html";
+    }
+
+    @GetMapping("/home")
+    public String getRegisterView() {
+        return "home.html";
+    }
+
+    @GetMapping("/aboutsignedin")
+    public String getRegisterView() {
+        return "about_signed_in.html";
+    }
+
+    @GetMapping("/about")
+    public String getRegisterView() {
+        return "about.html";
+    }
+
+    @GetMapping("/logout")
+    public String getRegisterView() {
+        return "home.html";
+    }
+
+
+    @GetMapping("/changepassword")
+    public String getRegisterView() {
+        return "change_password.html";
     }
 }

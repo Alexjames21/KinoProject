@@ -15,7 +15,7 @@ public class IndexController {
 
     @GetMapping
     public String getIndexView(){
-        return "index.html";
+        return "home.html";
     }
 
 }

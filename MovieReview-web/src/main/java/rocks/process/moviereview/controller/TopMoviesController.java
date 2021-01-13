@@ -12,6 +12,26 @@ import org.springframework.web.bind.annotation.RequestMapping;
     @GetMapping
     public String getTopMovieView() { return "top_movies.html"; }
 
+    @GetMapping("/godfather")
+    public String getGodfatherReviewView() {
+        return "godfather.html";
+    }
+
+    @GetMapping("/it")
+    public String getGodfatherReviewView() {
+        return "it.html";
+    }
+
+    @GetMapping("/starwars")
+    public String getGodfatherReviewView() {
+        return "starwarsix.html";
+    }
+
+    @GetMapping("/tenet")
+    public String getGodfatherReviewView() {
+        return "tenet";
+    }
+
     @GetMapping("/createGodfather")
     public String getGodfatherReviewView() {
         return "review_form_godfather.html";
