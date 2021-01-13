@@ -6,11 +6,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@GetMapping(path = "/top_movies")
-    public class TopMoviesController {
+@RequestMapping(path = "/top_movies")
+public class TopMoviesController {
+
 
     @GetMapping
-    public String getTopMoviesView() { return "top_movies.html"; }
+    public String getTopMovieView() { return "/top_movies.html"; }
 
     @GetMapping("/godfather")
     public String getGodfatherView() {
