@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping(path = "/top_movies")
     public class TopMoviesController {
 
+
     @GetMapping
     public String getTopMovieView() { return "top_movies.html"; }
 
