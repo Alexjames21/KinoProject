@@ -35,7 +35,7 @@ public class UserController {
     //    return ResponseEntity.ok().build();
    // }
 
-    @GetMapping("/error")
+    @GetMapping("/error403")
     public String getErrorView() {
         return "403.html";
     }
