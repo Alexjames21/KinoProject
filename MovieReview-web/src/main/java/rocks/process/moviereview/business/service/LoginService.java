@@ -21,26 +21,19 @@ import javax.validation.Validator;
 public class LoginService {
 
     @Autowired
-    private UserRepository agentRepository;
+    private UserRepository userRepository;
     @Autowired
     Validator validator;
     @Autowired
     private PasswordEncoder passwordEncoder;
 
-    public void saveUser(@Valid User agent) throws Exception {
-        if (user.getId() == null) {
-            if (agentRepository.findByEmail(agent.getEmail()) != null) {
-                throw new Exception("Email address " + agent.getEmail() + " already assigned another agent.");
+    public void saveUser(@Valid User user) throws Exception {
+            if (userRepository.findByEmail(user.getEmail()) != null) {
+                throw new Exception("Email address " + user.getEmail() + " already assigned another user.");
             }
-        } else if (agentRepository.findByEmailAndIdNot(agent.getEmail(), agent.getId()) != null) {
-            throw new Exception("Email address " + agent.getEmail() + " already assigned another agent.");
         }
-        agent.setPassword(passwordEncoder.encode(agent.getPassword()));
-        agentRepository.save(agent);
+        user.setPassword(passwordEncoder.encode(user.getPassword()));
+        agentRepository.save(user);
     }
 
-    public User getCurrentAgent() {
-        String userEmail = (String) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-        return agentRepository.findByEmail(userEmail);
-    }
-}
+

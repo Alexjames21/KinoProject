@@ -10,14 +10,11 @@ import javax.persistence.ManyToOne;
 @Entity
 public class Review {
 
-	@Id
 	@GeneratedValue
-	private String username;
-	private String inpEmail;
-	private String password;
+	private String name;
+	private String text;
 	@ManyToOne
 	@JsonIgnore
-	private User user;
 
 
 
@@ -30,28 +27,14 @@ public class Review {
 		this.name = name;
 	}
 
-	public String getEmail() {
-		return email;
+	public String getText() {
+		return text;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
+	public void setText (String email) {
+		this.text = text;
 	}
 
-	public String getMobile() {
-		return mobile;
-	}
 
-	public void setMobile(String mobile) {
-		this.mobile = mobile;
-	}
-
-	public User getAgent() {
-		return agent;
-	}
-
-	public void setAgent(User agent) {
-		this.agent = agent;
-	}
 
 }
