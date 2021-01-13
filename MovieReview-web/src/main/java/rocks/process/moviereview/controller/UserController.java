@@ -28,7 +28,7 @@ public class UserController {
     //@PostMapping("/register")
     //public ResponseEntity<Void> postRegister(@RequestBody User agent) {
       //  try {
-        //    agentService.saveAgent(agent);
+        //    agentService.saveUser(user);
    //     } catch (Exception e) {
     //        throw new ResponseStatusException(HttpStatus.NOT_ACCEPTABLE, e.getMessage());
     //    }

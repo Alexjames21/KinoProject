@@ -13,8 +13,5 @@ import java.util.List;
 
 @Repository
 public interface ReviewRepository extends JpaRepository<Review, Long> {
-	Review findByMobile(String mobile);
-	Review findByMobileAndIdNot(String mobile, Long agentId);
-	List<Review> findByAgentId(Long agentId);
-	List<Review> findByIdAndAgentId(Long customerId, Long agentId);
+	Review findByName(String Name);
 }*/

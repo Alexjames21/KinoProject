@@ -12,7 +12,6 @@ public class Review  {
 
 	private String name;
 	private String text;
-	private String id;
 
 	@ManyToOne
 	@JsonIgnore
@@ -33,14 +32,8 @@ public class Review  {
 		this.text = text;
 	}
 
-	public void setId(String id) {
-		this.id = id;
-	}
 
-	@Id
-	public String getId() {
-		return id;
-	}
 }
+
 
 
